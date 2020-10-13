@@ -1,5 +1,6 @@
 * {box-sizing: border-box;}
-.wrapper {
+/* Grid example */
+/*.wrapper {
   max-width: 940px;
   margin: 0 auto;
 }
@@ -40,4 +41,18 @@
 .six {
   grid-column: 3;
   grid-row: 4;
+}*/
+
+/* My Grid Example */
+.grid {
+    display: grid;
+    grid-template-columns: 4fr 4fr 4fr 4fr;
+    grid-template-rows: auto 200px;
+    gap: 10px;
 }
+
+.grid div {
+    background: aquamarine;
+    padding: 10px;
+}
+
