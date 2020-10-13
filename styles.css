@@ -43,16 +43,33 @@
   grid-row: 4;
 }*/
 
-/* My Grid Example */
+/* My Grid New Example */
 .grid {
     display: grid;
-    grid-template-columns: 4fr 4fr 4fr 4fr;
-    grid-template-rows: auto 200px;
-    gap: 10px;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1em;
 }
 
-.grid div {
+.nested-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 100px;
+    gap: 1em;
+}
+
+.nested-grid > div {
+    border: 1px solid #000;
+    background: aliceblue;
+    padding: 1em;
+}
+
+.grid > div {
     background: aquamarine;
     padding: 10px;
+}
+
+.grid .bigOne {
+    grid-column: 2 / 5;
+    grid-row: 3;
 }
 
